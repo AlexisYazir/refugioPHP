@@ -1,0 +1,143 @@
+/*Nombre de la veterinaria*/
+.me-auto {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.navbar{
+    background-color: #f8efdcf2;
+}   
+.logo{
+    height: 80px;
+    border-radius: 50%;
+}
+.titulo{
+    display: flex;
+}
+
+.login-button {
+  background-color: #ebb462;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color: #f5c174;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #ebb462;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ebb462;
+}
+
+.nav-link:hover,
+nav-link.active {
+  color: #ebb462;
+}
+
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #e59621;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+/*Estilos para las imgenes*/
+.slider-frame{
+    padding: 20px;
+    width: 75%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+
+  }
+  .slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 8s infinite alternate ease-in-out;
+  }
+  .slider-frame li{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+  }
+  .slider-frame img{
+    width: 100%;
+    border-radius: 5px;
+  }
+  .slider-frame li img{
+    width: 80%;
+    height: auto;
+  }
+  @keyframes slide{
+    0% {margin-left: 0}
+    20%{margin-left: 0;}
+  
+    25%{margin-left: -100% ;}
+    45%{margin-left: -100%;}
+  
+    50%{margin-left: -200% ;}
+    70%{margin-left: -200%;}
+  
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+  }
+
+  /*Estilos para el footer*/
+  footer {
+    background-color: rgb(0, 0, 0);
+    font-size: 70px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding: 40px;
+  }
+  .Text_footer_1 {
+    font-size: 14px;
+    color: aliceblue;
+  }
+  .footer_t{
+    color: #f8efdcf2;
+    font-size: 30px;
+  font-weight: 800;
+  }
+  .Text_footer_1 {
+    font-size: 14px;
+  }
