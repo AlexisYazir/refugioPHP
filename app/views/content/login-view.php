@@ -1,5 +1,5 @@
 <div class="login-container container login">
-        <form>
+        <form action="" method="POST" autocomplete="on">
           <h1>Inicio de sesión</h1> 
           <div class="form-text">Ingrese su nombre de usuario.</div>
           <div class="input-group mb-3">

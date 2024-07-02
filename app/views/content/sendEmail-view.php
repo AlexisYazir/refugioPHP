@@ -1,5 +1,5 @@
 <div class="login-container container">
-        <form>
+        <form action="" method="POST" autocomplete="on">
           <h1>Recuperación de contraseña</h1> 
           <p>Escribe la direccion de correo electronico con la que tienes asociado el tidio </p> 
           <div class="form-text">Ingrese su correo.</div>
