@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="<?php echo APP_URL; ?>/../app/views/css/style.css">
 <div class="container">
     <section>
 	  	<div>

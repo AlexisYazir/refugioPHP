@@ -1,0 +1,6 @@
+#Indicar que se van a sobreescribir las reglas del servidor.
+RewriteEngine On
+#Eliminar los permisos para ver el contenido de las carpetas del proyecto.
+Options All -Indexes
+#Configurar las URL amigables.
+RewriteRule ^([a-zA-Z0-9/ñÑ-]+)$ index.php?views=$1

@@ -15,27 +15,20 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="<?php echo APP_URL; ?>dashboard/">Home</a>
+                <a class="nav-link mx-lg-2" href="<?php echo APP_URL; ?>admindashboard/">admindashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="<?php echo APP_URL; ?>login/">Iniciar sesión</a>
+                <a class="nav-link mx-lg-2" href="<?php echo APP_URL; ?>crudslider/">CRUD Slider</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="<?php echo APP_URL; ?>register/">Registrate</a>
+                <a class="nav-link mx-lg-2" href="<?php echo APP_URL; ?>crudmascotas/">CRUD Mascotas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="<?php echo APP_URL; ?>mascotas/">Adopta</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="<?php echo APP_URL; ?>images/">Slider</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="<?php echo APP_URL; ?>about/">Quienes somos</a>
+                <a class="nav-link mx-lg-2" href="<?php echo APP_URL; ?>cruddonacion/">CRUD Donativos</a>
               </li>
             </ul>
           </div>
         </div>
-        <a href="<?php echo APP_URL; ?>donations/" class="login-button">Donar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

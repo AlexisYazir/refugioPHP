@@ -26,7 +26,13 @@
             require_once "./app/views/inc/navbar.php";
             require_once "./app/views/content/".$vista."-view.php";
         }else{
-            require_once "./app/views/inc/navbar.php";
+            if ($vista=="./app/views/content/admindashboard-view.php" || 
+            $vista=="./app/views/content/cruddonacion-view.php" || 
+            $vista=="./app/views/content/crudmascotas-view.php" || 
+            $vista=="./app/views/content/crudslider-view.php")
+                require_once "./app/views/inc/adminnavbar.php";
+            else
+                require_once "./app/views/inc/navbar.php";
             require_once $vista;
         }
         require_once "./app/views/inc/script.php"; 

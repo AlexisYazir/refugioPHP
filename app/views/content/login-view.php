@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="<?php echo APP_URL; ?>/../app/views/css/style.css">
 <div class="login-container container login">
         <form action="" method="POST" autocomplete="on">
           <h1>Inicio de sesión</h1> 

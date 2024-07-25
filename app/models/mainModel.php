@@ -30,6 +30,23 @@
 			return $sql;
 		}
 
+		public function seleccionarImgSlider(){
+            $sql = $this->conectar()->prepare("SELECT * FROM tblslider WHERE estatus=1");
+            $sql->execute();
+            return $sql;
+        }
+
+		public function traerMascotas(){
+            $sql = $this->conectar()->prepare("SELECT * FROM tblmascota");
+            $sql->execute();
+            return $sql;
+        }
+		public function traerMision(){
+            $sql = $this->conectar()->prepare("SELECT mision,vision FROM tblempresa");
+            $sql->execute();
+            return $sql;
+        }
+
 
 			#  Funcion para limpiar cadenas, evitar inyeccion sql #
 		public function limpiarCadena($cadena){
@@ -57,40 +74,6 @@
             }else{
                 return true;
             }
-		}
-
-
-			#  Funcion para ejecutar una consulta INSERT preparada  #
-		protected function guardarDatos($tabla,$datos){
-
-			$query="INSERT INTO $tabla (";
-
-			$C=0;
-			foreach ($datos as $clave){
-				if($C>=1){ $query.=","; }
-				$query.=$clave["campo_nombre"];
-				$C++;
-			}
-			
-			$query.=") VALUES(";
-
-			$C=0;
-			foreach ($datos as $clave){
-				if($C>=1){ $query.=","; }
-				$query.=$clave["campo_marcador"];
-				$C++;
-			}
-
-			$query.=")";
-			$sql=$this->conectar()->prepare($query);
-
-			foreach ($datos as $clave){
-				$sql->bindParam($clave["campo_marcador"],$clave["campo_valor"]);
-			}
-
-			$sql->execute();
-
-			return $sql;
 		}
 	    
 	}

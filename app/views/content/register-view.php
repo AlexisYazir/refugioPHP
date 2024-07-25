@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="<?php echo APP_URL; ?>/../app/views/css/style.css">
 <div class="login-container container">
         <form class="FormularioAjax" action="<?php echo APP_URL; ?>app/ajax/usuarioAjax.php" method="POST" autocomplete="on" enctype="multipart/form-data">
           <input type="hidden" name="modulo_usuario" value="registrar">

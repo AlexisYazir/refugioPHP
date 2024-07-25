@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="<?php echo APP_URL; ?>/../app/views/css/style.css">
 <div class="login-container container">
         <form action="" method="POST" autocomplete="on">
           <h1>Donaciones a Huellitas Caninas</h1>  

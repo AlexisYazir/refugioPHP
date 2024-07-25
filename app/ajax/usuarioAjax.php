@@ -5,6 +5,7 @@
 	require_once "../../autoload.php";
 	
 	use app\controllers\userController;
+	use app\controllers\sliderController;
 
 	if(isset($_POST['modulo_usuario'])){
 
@@ -12,6 +13,13 @@
 
 		if($_POST['modulo_usuario']=="registrar"){
 			echo $insUsuario->registrarUsuarioControlador();
+		}
+		
+	}
+	else if(isset($_POST['modulo_imagenes'])){
+		$insSlider = new sliderController();
+		if($_POST['modulo_imagenes']=="imagenes"){
+			echo $insSlider->guardarImagenesControlador();
 		}
 		
 	}else{

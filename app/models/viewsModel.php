@@ -5,7 +5,8 @@
 
 		protected function obtenerVistasModelo($vista){
 
-			$listaBlanca=["dashboard","refugio","donations", "register", "recoverPswd", "sendEmail"];
+			$listaBlanca=["dashboard","refugio","donations", "register", "recoverPswd",
+			 "sendEmail","images","admindashboard", "cruddonacion", "crudmascotas", "crudslider", "mascotas","about"];
 
 			if(in_array($vista, $listaBlanca)){
 				if(is_file("./app/views/content/".$vista."-view.php")){
